@@ -1,0 +1,51 @@
+fileFormatVersion: 2
+guid: a9f78a052e162574fa67335b081cd84a
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - introPanel: {instanceID: 0}
+  - setupPanel: {instanceID: 0}
+  - enterGamePanel: {instanceID: 0}
+  - gamePanel: {instanceID: 0}
+  - gameOverPanel: {instanceID: 0}
+  - clue1: {instanceID: 0}
+  - clue2: {instanceID: 0}
+  - clue3: {instanceID: 0}
+  - clue4: {instanceID: 0}
+  - clue5: {instanceID: 0}
+  - clue6: {instanceID: 0}
+  - clue7: {instanceID: 0}
+  - clue8: {instanceID: 0}
+  - clue9: {instanceID: 0}
+  - clue10: {instanceID: 0}
+  - clue11: {instanceID: 0}
+  - clue12: {instanceID: 0}
+  - clue13: {instanceID: 0}
+  - clue14: {instanceID: 0}
+  - clue15: {instanceID: 0}
+  - clue16: {instanceID: 0}
+  - numberOfClues: {instanceID: 0}
+  - currentClue: {instanceID: 0}
+  - target1Txt: {instanceID: 0}
+  - target2Txt: {instanceID: 0}
+  - target3Txt: {instanceID: 0}
+  - target4Txt: {instanceID: 0}
+  - target5Txt: {instanceID: 0}
+  - target6Txt: {instanceID: 0}
+  - target7Txt: {instanceID: 0}
+  - target8Txt: {instanceID: 0}
+  - target9Txt: {instanceID: 0}
+  - target10Txt: {instanceID: 0}
+  - target11Txt: {instanceID: 0}
+  - target12Txt: {instanceID: 0}
+  - target13Txt: {instanceID: 0}
+  - target14Txt: {instanceID: 0}
+  - target15Txt: {instanceID: 0}
+  - target16Txt: {instanceID: 0}
+  - welcomeClip: {fileID: 8300000, guid: 2a23eacbbd564124eb492f77bfd449cc, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
