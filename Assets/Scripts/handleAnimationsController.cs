@@ -29,7 +29,7 @@ public class handleAnimationsController : MonoBehaviour
     {
         hideBoy();
         AppStartTxtAnim = AppStartTxt.GetComponent<Animator>();
-        boyAudioSource = GetComponent<AudioSource>();
+        
     }
 
     // Update is called once per frame
@@ -64,6 +64,7 @@ public class handleAnimationsController : MonoBehaviour
 
     public void showBoy()
     {
+        boyAudioSource = boy.GetComponent<AudioSource>();
         boy.SetActive(true);
     }
 
