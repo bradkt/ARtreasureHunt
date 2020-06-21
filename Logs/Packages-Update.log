@@ -52,3 +52,13 @@ Update Mode: mergeDefaultDependencies
 The following packages were added:
   com.unity.ext.nunit@1.0.0
   com.unity.package-manager-ui@2.2.0
+
+=== Sun Jun 21 10:44:32 2020
+
+Packages were changed.
+Update Mode: updateDependencies
+
+The following packages were updated:
+  com.unity.test-framework from version 1.1.13 to 1.1.14
+The following packages were removed:
+  com.unity.package-manager-ui@2.2.0
