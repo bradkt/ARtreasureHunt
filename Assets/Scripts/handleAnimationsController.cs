@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UIElements;
+using UnityEngine.SceneManagement;
 
 public class handleAnimationsController : MonoBehaviour
 {
@@ -12,8 +13,8 @@ public class handleAnimationsController : MonoBehaviour
     private Animator flyingShipAnim;
     private Animator AppStartTxtAnim;
     public AudioClip welcomeClip;
-    AudioSource boyAudioSource;
     public static handleAnimationsController instance;
+    private AudioSource boyAudioSource;
 
 
     private void Awake()
@@ -44,7 +45,9 @@ public class handleAnimationsController : MonoBehaviour
     }
 
     public void playAudio(string clipName)
-    {
+    { 
+        // maybe create new fuction for getComponent audio and check if it's null first
+        boyAudioSource = boy.GetComponent<AudioSource>();
         if (clipName == "welcome")
         {
             boyAudioSource.Play();
@@ -64,7 +67,6 @@ public class handleAnimationsController : MonoBehaviour
 
     public void showBoy()
     {
-        boyAudioSource = boy.GetComponent<AudioSource>();
         boy.SetActive(true);
     }
 
@@ -76,7 +78,6 @@ public class handleAnimationsController : MonoBehaviour
     public void hideBoy()
     {
         boy.SetActive(false);
-
     }
 
     public void callPlayIntroAnim()

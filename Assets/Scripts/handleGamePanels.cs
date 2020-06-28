@@ -102,7 +102,7 @@ public class handleGamePanels : MonoBehaviour
 
     public void QuitApp()
     {
-        // Application.Quit();
+        Application.Quit();
     }
 
     /* 
@@ -132,19 +132,12 @@ public class handleGamePanels : MonoBehaviour
 
     public void saveClues()
     {
-        target1Txt.text = "this is clue one";
-        target2Txt.text = "this is clue Two";
-        target3Txt.text = "this is clue Three";
-        target4Txt.text = "this is clue four";
-        target5Txt.text = "this is clue five";
-        target6Txt.text = "this is clue six";
-
-/*        target1Txt.text = getClueFromPrefs(1);
+        target1Txt.text = getClueFromPrefs(1);
         target2Txt.text = getClueFromPrefs(2);
         target3Txt.text = getClueFromPrefs(3);
         target4Txt.text = getClueFromPrefs(4);
         target5Txt.text = getClueFromPrefs(5);
-        target6Txt.text = getClueFromPrefs(6);*/
+        target6Txt.text = getClueFromPrefs(6);
         target7Txt.text = getClueFromPrefs(7);
         target8Txt.text = getClueFromPrefs(8);
         target9Txt.text = getClueFromPrefs(9);
@@ -178,7 +171,9 @@ public class handleGamePanels : MonoBehaviour
 
     public void playGameAnim()
     {
+        
         gamePanelAnim.SetTrigger("playGamePanelIn");
+        playEnterGameAnimOut();
     }
 
     public void playGameOverAnim()
@@ -262,7 +257,7 @@ public class handleGamePanels : MonoBehaviour
 
     private void checkForEndOfGame()
     {
-        if (this.currentClueNumber == int.Parse(this.numberOfClues.text) + 1)
+        if (this.currentClueNumber.ToString() == this.numberOfClues.text)
         {
             this.shouldEndGame = true;
         }
